@@ -27,6 +27,11 @@ struct GameView: View {
                 
                 Button(game.player2.name) {
                     game.player2.isCurrent = true
+                    if game.gameType == .bot {
+                        Task {
+                            await game.deviceMove()
+                        }
+                    }
                 }
                 .buttonStyle(PlayerButtonStyle(isCurrent: game.player2.isCurrent))
             }
@@ -49,6 +54,16 @@ struct GameView: View {
                     }
                 }
             }
+            .overlay(content: {
+                if game.isThinking {
+                    VStack {
+                        Text("Thinking...")
+                            .foregroundColor(Color(.systemBackground))
+                            .background(Rectangle().fill(Color.primary))
+                        ProgressView()
+                    }
+                }
+            })
             .disabled(game.boardDisable)
             
             VStack {
