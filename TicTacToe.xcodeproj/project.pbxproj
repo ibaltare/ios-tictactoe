@@ -13,6 +13,7 @@
 		375D0A1F2A1473390054A58F /* YourNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375D0A1E2A1473390054A58F /* YourNameView.swift */; };
 		375D0A232A147CBD0054A58F /* MPConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375D0A222A147CBD0054A58F /* MPConnectionManager.swift */; };
 		375D0A252A147F1B0054A58F /* MPGameMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375D0A242A147F1B0054A58F /* MPGameMove.swift */; };
+		375D0A272A1492980054A58F /* MPPeersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375D0A262A1492980054A58F /* MPPeersView.swift */; };
 		3785A4422A13E5A000F8CC39 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785A4412A13E5A000F8CC39 /* AppEntry.swift */; };
 		3785A4442A13E5A000F8CC39 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785A4432A13E5A000F8CC39 /* StartView.swift */; };
 		3785A4462A13E5A100F8CC39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3785A4452A13E5A100F8CC39 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		375D0A202A147B830054A58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		375D0A222A147CBD0054A58F /* MPConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPConnectionManager.swift; sourceTree = "<group>"; };
 		375D0A242A147F1B0054A58F /* MPGameMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPGameMove.swift; sourceTree = "<group>"; };
+		375D0A262A1492980054A58F /* MPPeersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPPeersView.swift; sourceTree = "<group>"; };
 		3785A43E2A13E5A000F8CC39 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3785A4412A13E5A000F8CC39 /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
 		3785A4432A13E5A000F8CC39 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				375D0A222A147CBD0054A58F /* MPConnectionManager.swift */,
 				375D0A242A147F1B0054A58F /* MPGameMove.swift */,
+				375D0A262A1492980054A58F /* MPPeersView.swift */,
 			);
 			path = MultiPeerConnectivity;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				3785A4422A13E5A000F8CC39 /* AppEntry.swift in Sources */,
 				375D0A172A14417E0054A58F /* GameService.swift in Sources */,
 				3785A4562A13F5DC00F8CC39 /* ViewModifiers.swift in Sources */,
+				375D0A272A1492980054A58F /* MPPeersView.swift in Sources */,
 				375D0A232A147CBD0054A58F /* MPConnectionManager.swift in Sources */,
 				3785A4592A13F80000F8CC39 /* GameView.swift in Sources */,
 				375D0A192A144A9B0054A58F /* GameSquare.swift in Sources */,
