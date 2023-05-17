@@ -11,6 +11,8 @@
 		375D0A192A144A9B0054A58F /* GameSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375D0A182A144A9B0054A58F /* GameSquare.swift */; };
 		375D0A1D2A144E730054A58F /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375D0A1C2A144E730054A58F /* SquareView.swift */; };
 		375D0A1F2A1473390054A58F /* YourNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375D0A1E2A1473390054A58F /* YourNameView.swift */; };
+		375D0A232A147CBD0054A58F /* MPConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375D0A222A147CBD0054A58F /* MPConnectionManager.swift */; };
+		375D0A252A147F1B0054A58F /* MPGameMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375D0A242A147F1B0054A58F /* MPGameMove.swift */; };
 		3785A4422A13E5A000F8CC39 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785A4412A13E5A000F8CC39 /* AppEntry.swift */; };
 		3785A4442A13E5A000F8CC39 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785A4432A13E5A000F8CC39 /* StartView.swift */; };
 		3785A4462A13E5A100F8CC39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3785A4452A13E5A100F8CC39 /* Assets.xcassets */; };
@@ -26,6 +28,9 @@
 		375D0A182A144A9B0054A58F /* GameSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquare.swift; sourceTree = "<group>"; };
 		375D0A1C2A144E730054A58F /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		375D0A1E2A1473390054A58F /* YourNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourNameView.swift; sourceTree = "<group>"; };
+		375D0A202A147B830054A58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		375D0A222A147CBD0054A58F /* MPConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPConnectionManager.swift; sourceTree = "<group>"; };
+		375D0A242A147F1B0054A58F /* MPGameMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPGameMove.swift; sourceTree = "<group>"; };
 		3785A43E2A13E5A000F8CC39 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3785A4412A13E5A000F8CC39 /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
 		3785A4432A13E5A000F8CC39 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -48,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		375D0A212A147C790054A58F /* MultiPeerConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				375D0A222A147CBD0054A58F /* MPConnectionManager.swift */,
+				375D0A242A147F1B0054A58F /* MPGameMove.swift */,
+			);
+			path = MultiPeerConnectivity;
+			sourceTree = "<group>";
+		};
 		3785A4352A13E5A000F8CC39 = {
 			isa = PBXGroup;
 			children = (
@@ -67,11 +81,13 @@
 		3785A4402A13E5A000F8CC39 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				375D0A202A147B830054A58F /* Info.plist */,
+				3785A4412A13E5A000F8CC39 /* AppEntry.swift */,
+				3785A4432A13E5A000F8CC39 /* StartView.swift */,
+				375D0A212A147C790054A58F /* MultiPeerConnectivity */,
 				3785A4572A13F7E100F8CC39 /* GameScreen */,
 				3785A4542A13F57D00F8CC39 /* Utilities */,
 				3785A4512A13EC6600F8CC39 /* Models */,
-				3785A4412A13E5A000F8CC39 /* AppEntry.swift */,
-				3785A4432A13E5A000F8CC39 /* StartView.swift */,
 				375D0A1E2A1473390054A58F /* YourNameView.swift */,
 				3785A44F2A13E99F00F8CC39 /* Launch Screen.storyboard */,
 				3785A4452A13E5A100F8CC39 /* Assets.xcassets */,
@@ -186,12 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375D0A252A147F1B0054A58F /* MPGameMove.swift in Sources */,
 				375D0A1F2A1473390054A58F /* YourNameView.swift in Sources */,
 				3785A4442A13E5A000F8CC39 /* StartView.swift in Sources */,
 				3785A4532A13EC8900F8CC39 /* GameModels.swift in Sources */,
 				3785A4422A13E5A000F8CC39 /* AppEntry.swift in Sources */,
 				375D0A172A14417E0054A58F /* GameService.swift in Sources */,
 				3785A4562A13F5DC00F8CC39 /* ViewModifiers.swift in Sources */,
+				375D0A232A147CBD0054A58F /* MPConnectionManager.swift in Sources */,
 				3785A4592A13F80000F8CC39 /* GameView.swift in Sources */,
 				375D0A192A144A9B0054A58F /* GameSquare.swift in Sources */,
 				375D0A1D2A144E730054A58F /* SquareView.swift in Sources */,
@@ -325,6 +343,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TicTacToe/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TicTacToe/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Would like to play  Tic Tac Toe";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,6 +375,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TicTacToe/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TicTacToe/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Would like to play  Tic Tac Toe";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
